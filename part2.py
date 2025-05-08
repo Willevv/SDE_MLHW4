@@ -1,3 +1,5 @@
+import tensorflow as tf
+from tensorflow import keras 
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -7,7 +9,6 @@ M = 40000
 d = 10 #dimension
 dt = 0.005
 T = M*dt
-d = 10 #dimension
 Nbatch = 1
 validation_split_ratio = 0.2
 EPOCHS = np.int64(M/(N*(1-validation_split_ratio)/Nbatch))
